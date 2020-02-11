@@ -1040,7 +1040,6 @@ public class POJOPropertiesCollector
                 //    add back pruned creator properties!
                 String name = prop.getName();
                 // 27-Nov-2019, tatu: Not sure why, but we should NOT remove it from `all` tho:
-//                if (all.remove(name) != null) {
                 if (all.containsKey(name)) {
                     ordered.put(name, prop);
                 }
@@ -1148,3 +1147,4 @@ public class POJOPropertiesCollector
         }
     }
 }
+
