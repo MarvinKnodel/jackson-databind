@@ -49,7 +49,7 @@ public abstract class MapperBuilder<M extends ObjectMapper,
     B extends MapperBuilder<M,B>>
 {
     protected final static int DEFAULT_MAPPER_FEATURES = ConfigFeature.collectFeatureDefaults(MapperFeature.class);
-    protected final static int DEFAULT_SER_FEATURES = ConfigFeature.collectFeatureDefaults(SerializationFeature.class);
+    protected static final int DEFAULT_SER_FEATURES = ConfigFeature.collectFeatureDefaults(SerializationFeature.class);
     protected final static int DEFAULT_DESER_FEATURES = ConfigFeature.collectFeatureDefaults(DeserializationFeature.class);
 
     protected final static PrettyPrinter DEFAULT_PRETTY_PRINTER = new DefaultPrettyPrinter();
@@ -1468,3 +1468,4 @@ public abstract class MapperBuilder<M extends ObjectMapper,
     @SuppressWarnings("unchecked")
     protected final B _this() { return (B) this; }
 }
+
