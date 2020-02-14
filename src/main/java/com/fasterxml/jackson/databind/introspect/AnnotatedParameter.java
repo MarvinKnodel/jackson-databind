@@ -129,8 +129,6 @@ public final class AnnotatedParameter
     /**********************************************************************
      */
 
-//    public Type getParameterType() { return _type; }
-
     /**
      * Accessor for 'owner' of this parameter; method or constructor that
      * has this parameter as member of its argument list.
@@ -172,4 +170,5 @@ public final class AnnotatedParameter
         return "[parameter #"+getIndex()+", annotations: "+_annotations+"]";
     }
 }
+
 
