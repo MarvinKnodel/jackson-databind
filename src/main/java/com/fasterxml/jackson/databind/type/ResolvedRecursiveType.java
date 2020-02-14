@@ -51,7 +51,6 @@ public class ResolvedRecursiveType extends TypeBase
         //    end up in StackOverflowError... two choices; '?' for "not known",
         //    or erased signature.
         if (_referencedType != null) {
-//            return _referencedType.getGenericSignature(sb);
             return _referencedType.getErasedSignature(sb);
         }
         return sb.append("?");
@@ -143,3 +142,4 @@ public class ResolvedRecursiveType extends TypeBase
         return false;
     }
 }
+
